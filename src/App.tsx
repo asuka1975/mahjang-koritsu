@@ -10,6 +10,7 @@ function App() {
       <QuestionContextProvider>
         <BrowserRouter>
           <Routes>
+            <Route path='/' element={<QuestionPage />} />
             <Route path='/question' element={<QuestionPage />} />
             <Route path='/answer0' element={<AnswerPage index={0} />} />
             <Route path='/answer1' element={<AnswerPage index={1} />} />
