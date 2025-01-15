@@ -2,9 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
+export default defineConfig((ctx) => {
   let base = "/"
-  if (mode === "production") {
+  if (ctx.mode === "production") {
     base = "/mahjang-koritsu/"
   }
 
